@@ -322,7 +322,7 @@ class ModelPadfCalculator:
         print(f'<pair_dist_calculation> Calculating pairwise interatomic distances...')
         # interatomic_vectors
         for k, a_i in enumerate(self.subject_atoms):
-            if k % int(len(self.subject_atoms) * 0.05) == 0:
+            if k % int(len(self.subject_atoms) * 1) == 0:
                 print(f"{k} / {len(self.subject_atoms)}")
             for a_j in self.extended_atoms:
                 if not np.array_equal(a_i, a_j):
